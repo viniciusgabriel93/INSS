@@ -1,1 +1,253 @@
-[... HTML FROM ABOVE GOES HERE ...]
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maria Eliza | Benefícios da Previdência</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #fff;
+      background: url('fundo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .button-whatsapp {
+      display: inline-block;
+      margin-top: 25px;
+      background-color: #25D366;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    section {
+      max-width: 700px;
+      margin: 30px auto;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px 25px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+    }
+
+    section h2 {
+      color: #25D366;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    section ul li {
+      margin-bottom: 8px;
+    }
+
+    section ul li::before {
+      content: "✅ ";
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      background-color: #ffffffdd;
+      color: #000;
+    }
+
+    form textarea {
+      resize: vertical;
+    }
+
+    form button {
+      margin-top: 25px;
+      width: 100%;
+      background-color: #25D366;
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 22px;
+      }
+
+      .button-whatsapp {
+        font-size: 14px;
+        padding: 12px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Maria Eliza de Oliveira Paixão</h1>
+    <p>Especialista em Benefícios da Previdência</p>
+    <p>“Conheça seus direitos e conquiste com agilidade e segurança.”</p>
+    <a class="button-whatsapp" href="#formulario">Fale comigo agora no WhatsApp</a>
+  </header>
+
+  <section>
+    <h2>O que eu faço</h2>
+    <ul>
+      <li>Aposentadoria por tempo de contribuição</li>
+      <li>Aposentadoria por idade</li>
+      <li>Revisão da aposentadoria</li>
+      <li>Pensão por morte</li>
+      <li>Benefício por incapacidade</li>
+      <li>Planejamento previdenciário</li>
+      <li>Auxílio-doença e LOAS</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Quem sou eu</h2>
+    <p>Sou bacharel em Direito, especialista em Direito Previdenciário, com mais de 10 anos ajudando trabalhadores e aposentados a garantir o que é de direito por lei!</p>
+  </section>
+
+  <section id="formulario">
+    <h2>Está com dúvidas sobre seus benefícios?</h2>
+    <p>Preencha os dados abaixo para agilizar o atendimento via WhatsApp:</p>
+
+    <form id="form">
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" required>
+
+      <label for="idade">Idade</label>
+      <input type="number" id="idade" required>
+
+      <label for="telefone">Telefone de contato</label>
+      <input type="tel" id="telefone" required>
+
+      <label for="beneficio">Tipo de benefício</label>
+      <select id="beneficio" required>
+        <option value="">Selecione</option>
+        <option>Aposentadoria por idade</option>
+        <option>Aposentadoria por tempo de contribuição</option>
+        <option>Revisão de benefício</option>
+        <option>Pensão por morte</option>
+        <option>Auxílio-doença</option>
+        <option>LOAS</option>
+        <option>Planejamento Previdenciário</option>
+        <option>Outro</option>
+      </select>
+
+      <label for="entrada">Você já deu entrada no INSS?</label>
+      <select id="entrada" required>
+        <option value="">Selecione</option>
+        <option>Sim</option>
+        <option>Não</option>
+      </select>
+
+      <label for="documentos">Possui os documentos separados?</label>
+      <select id="documentos" required>
+        <option value="">Selecione</option>
+        <option>Sim</option>
+        <option>Não</option>
+        <option>Em parte</option>
+      </select>
+
+      <label for="cidade">Cidade e Estado</label>
+      <input type="text" id="cidade" required>
+
+      <label for="mensagem">Mensagem adicional (opcional)</label>
+      <textarea id="mensagem" rows="3"></textarea>
+
+      <button type="button" onclick="enviarWhatsApp()">Tirar minhas dúvidas no WhatsApp</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Maria Eliza de Oliveira Paixão — Especialista em Benefícios da Previdência</p>
+    <p>Contagem - MG</p>
+    <p>Respeitamos a Lei Geral de Proteção de Dados (LGPD). Seus dados estão seguros.</p>
+  </footer>
+
+  <script>
+    function enviarWhatsApp() {
+      const nome = document.getElementById('nome').value;
+      const idade = document.getElementById('idade').value;
+      const telefone = document.getElementById('telefone').value;
+      const beneficio = document.getElementById('beneficio').value;
+      const entrada = document.getElementById('entrada').value;
+      const documentos = document.getElementById('documentos').value;
+      const cidade = document.getElementById('cidade').value;
+      const mensagem = document.getElementById('mensagem').value;
+
+      const texto = `Olá, me chamo *${nome}*, tenho *${idade} anos*.
+Telefone: ${telefone}
+Cidade: ${cidade}
+
+Tipo de benefício: ${beneficio}
+Já dei entrada no INSS? ${entrada}
+Documentos separados? ${documentos}
+
+Mensagem adicional: ${mensagem || 'N/A'}`;
+
+      const url = `https://api.whatsapp.com/send?phone=5531991874690&text=${encodeURIComponent(texto)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
